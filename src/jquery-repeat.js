@@ -5,7 +5,7 @@ jQuery.fn.repeat = function(data, callback, target) {
     var templete = [];
 
     if (data === undefined) data = [];
-    if (typeof data == "object" && data != $.isArray(data)) data = [data];
+    if (typeof data == "object" && ! $.isArray(data)) data = [data];
 
     var repeat = function() {
         _this.each(function(index) {
