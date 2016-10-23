@@ -1,4 +1,4 @@
-jQuery.fn.repeat = function(data, callback, target) {
+jQuery.fn.repeat = jQuery.fn.repeat || function(data, callback, target) {
 
     var _this = this;
     var curData = [];
